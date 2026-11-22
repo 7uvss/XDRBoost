@@ -1,22 +1,22 @@
-# 版本记录
+# Changelog
 
 ## 1.1.1
 
-- 修复 EDR 接近 1 时 Gamma 系数突然跃升的问题。
-- 将用户目标值与当前可用值分开，余量降低时保留原选择。
-- 合并重复唤醒通知，生命周期状态不变时复用现有触发窗口。
-- 检测到外部 Gamma 修改后停止增强并保留新设置。
-- 恢复子进程增加就绪确认、非阻塞通信和存活检查。
-- 正常关闭时直接清理恢复子进程，避免主线程无限等待或残留挂起进程。
-- 渲染只统计成功帧；停滞时尝试重建一次，再失败则关闭增强。
-- 增加覆盖 15 项检查的本机回归测试。
+- Fix a discontinuous gamma increase when EDR headroom is close to 1.
+- Separate the user's requested target from currently available gain, retaining the selection when headroom drops.
+- Coalesce wake notifications and reuse the trigger window when lifecycle state is unchanged.
+- Stop boosting when an external gamma change is detected and preserve the new settings.
+- Add a readiness handshake, nonblocking communication, and health checks for the recovery process.
+- Retire the recovery process directly during normal shutdown, avoiding unbounded main-thread waits and suspended child processes.
+- Count only successful GPU frames; attempt one rebuild after a stall, then disable the boost if rendering fails again.
+- Add a 15-check local regression suite.
 
 ## 1.1.0
 
-- 移除全屏白色乘法浮层，改为极小 EDR 触发点与 Gamma 表增亮。
-- 增加基线保存、异常退出恢复、色彩冲突检查及本机诊断。
+- Replace the full-screen white multiply overlay with a tiny EDR trigger and gamma-table adjustment.
+- Add baseline capture, crash recovery, color-conflict checks, and local diagnostics.
 
 ## 1.0.x
 
-- 初始原生菜单栏工具与动态 EDR 滑杆。
-- 将滑杆移至弹出面板并精简控制界面。
+- Introduce a native menu bar app with a dynamic EDR slider.
+- Move slider controls into a popover and simplify the interface.

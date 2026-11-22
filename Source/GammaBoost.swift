@@ -184,7 +184,7 @@ final class EDRTriggerView: MTKView, MTKViewDelegate {
         buffer.present(drawable)
         buffer.addCompletedHandler { [weak self] command in
             let success = command.status == .completed
-            let error = command.error?.localizedDescription ?? "Metal 未完成绘制"
+            let error = command.error?.localizedDescription ?? "Metal command buffer did not complete"
             DispatchQueue.main.async {
                 guard let self else { return }
                 if success {

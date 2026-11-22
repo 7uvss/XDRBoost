@@ -47,7 +47,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         if others.contains(where: { $0.processIdentifier != ProcessInfo.processInfo.processIdentifier }) {
             if selfTesting {
                 verificationStatus = 2
-                fputs("请先退出正在运行的 XDRBoost，再执行自测。\n", stderr)
+                fputs("Quit the running XDRBoost application before running diagnostics.\n", stderr)
             }
             NSApp.terminate(nil); return
         }

@@ -1,25 +1,28 @@
 ---
-name: 问题反馈
-about: 报告增亮、窗口切换或恢复问题
+name: Bug report
+about: Report brightness, window-transition, or recovery problems
 labels: bug
 ---
 
-**环境**
-- XDRBoost 版本：
-- macOS 版本：
-- Mac 型号：
-- 内置屏幕的显示预设：
+**Environment**
 
-**复现步骤**
+- XDRBoost version:
+- macOS version:
+- Mac model:
+- Built-in display preset:
+
+**Steps to reproduce**
+
 1.
 2.
 3.
 
-**预期行为**
+**Expected behavior**
 
-**实际行为**
+**Actual behavior**
 
-**验证情况**
-是否退出正常应用后运行过 `--self-test`？如已运行，请附结果。
+**Validation**
 
-截图或日志请移除私人信息，不要提供设备序列号或账号凭据。
+Did you quit the normal application and run `--self-test`? If so, include the result.
+
+Remove private information from screenshots and logs. Do not include device serial numbers or account credentials.
