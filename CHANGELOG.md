@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.2
+
+- Add an application icon with native macOS icon sizes generated during the build.
+- Simplify the README and include the application icon.
+
 ## 1.1.1
 
 - Fix a discontinuous gamma increase when EDR headroom is close to 1.
