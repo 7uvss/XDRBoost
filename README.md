@@ -8,7 +8,11 @@ Adjust the boost, pause it when you need accurate colors, and quit to restore yo
 
 ## Install
 
-Requires an Apple Silicon Mac, macOS 13+, an XDR-capable built-in display, and [Command Line Tools](https://developer.apple.com/xcode/resources/).
+Requires an Apple Silicon Mac, macOS 13+, and an XDR-capable built-in display.
+
+[Download the latest release](https://github.com/7uvss/XDRBoost/releases/latest), unzip it, and move `XDRBoost.app` to Applications.
+
+To build from source, install [Command Line Tools](https://developer.apple.com/xcode/resources/):
 
 ```sh
 git clone https://github.com/7uvss/XDRBoost.git
